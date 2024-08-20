@@ -34,3 +34,5 @@ yarn-debug.log*
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+.bridgetown-cache/frontend-bundling/manifest.json
+node_modules/.yarn-integrity
