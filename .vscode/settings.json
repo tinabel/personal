@@ -1,0 +1,42 @@
+{
+  "ruby.rubocop.configFilePath": "",
+  "ruby.rubocop.executePath": "/Users/tvance/.rbenv/shims/",
+  "ruby.rubocop.useBundler": true,
+  "rubyLsp.formatter": "rubocop",
+  "ruby.rubocop.onSave": true,
+  "editor.formatOnSaveTimeout": 5000,
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnType": true,
+    "editor.wordSeparators": "`~@#$%^&*()-=+[{]}\\|;:'\",.<>/"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "elia.erb-formatter",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnType": true,
+    "editor.wordSeparators": "`~@#$%^&*()-=+[{]}\\|;:'\",.<>/"
+  },
+  "prettier.configPath": "",
+  "prettier.prettierPath": "/Users/tvance/Sites/node_modules/prettier",
+  "prettier.documentSelectors": [
+    "*.erb",
+    "*.css",
+    "*.scss"
+  ],
+  "prettier.experimentalTernaries": true,
+  "prettier.requireConfig": false,
+  "vs-code-prettier-eslint.prettierLast": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "scss.format.spaceAroundSelectorSeparator": true
+}
