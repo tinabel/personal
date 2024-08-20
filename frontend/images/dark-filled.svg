@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 150 150" version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+  <g transform="matrix(-3.13063,-0.836682,-0.836682,3.13063,275.349,-40.8446)">
+    <circle cx="50.5" cy="50.5" r="22.986" fill="#14171d"/>
+  </g>
+  <path d="M71.828,20.591c1.05,-0.06 2.107,-0.091 3.172,-0.091c30.079,0 54.5,24.421 54.5,54.5c0,30.079 -24.421,54.5 -54.5,54.5c-12.319,0 -23.69,-4.096 -32.822,-11c29.446,-0.096 53.322,-24.032 53.322,-53.5c0,-18.487 -9.398,-34.797 -23.672,-44.409Z" fill="#ffffff"/>
+</svg>

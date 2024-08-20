@@ -1,0 +1,15 @@
+<svg width="24" height="24" viewBox="0 0 150 150" version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+  <path class="background" d="M94.232,3.04c-39.716,-10.614 -80.578,13.012 -91.192,52.728c-10.614,39.716 13.012,80.578 52.728,91.192c39.716,10.614 80.578,-13.012 91.192,-52.728c10.614,-39.716 -13.012,-80.578 -52.728,-91.192Z" fill="#14171d"/>
+  <path class="ray" d="M145,74.466l-24.813,9.6l-0,-19.201l24.813,9.601Z" fill="#ffffff"/>
+  <path class="ray" d="M5,74.466l24.813,9.6l0,-19.201l-24.813,9.601Z" fill="#ffffff"/>
+  <path class="ray" d="M75,144.466l-9.601,-24.813l19.202,-0l-9.601,24.813Z" fill="#ffffff"/>
+  <path class="ray" d="M75,4.466l-9.601,24.813l19.202,-0l-9.601,-24.813Z" fill="#ffffff"/>
+  <path class="ray" d="M118.999,30.284l-4.393,17.97l-13.577,-13.577l17.97,-4.393Z" fill="#ffffff"/>
+  <path class="ray" d="M31.001,118.282l17.97,-4.392l-13.577,-13.578l-4.393,17.97Z" fill="#ffffff"/>
+  <path class="ray" d="M118.999,118.282l-17.97,-4.392l13.577,-13.578l4.393,17.97Z" fill="#ffffff"/>
+  <path class="ray" d="M31.001,30.284l4.393,17.97l13.577,-13.577l-17.97,-4.393Z" fill="#ffffff"/>
+  <circle class="center-circle" cx="75" cy="74.283" r="31.667" fill="#ffffff"/>
+</svg>
