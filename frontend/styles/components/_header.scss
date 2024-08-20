@@ -1,0 +1,50 @@
+@use "sass:map";
+
+.site-header {
+  @include themed {
+    color: t("bodyHeadings");
+  }
+
+  & {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 1rem;
+    grid-area: head;
+    position: relative;
+    width: max-content;
+  }
+}
+
+.site-name {
+  @include themed {
+    color: t("siteTitle");
+    transition: t("themeTransition");
+  }
+
+  & {
+    font-family: map.get($fonts, "heading", "font-family");
+    font-size: 2.2rem;
+    font-weight: map.get($fonts, "heading", "normal");
+    margin: 0;
+  }
+}
+
+@media (width <= 48rem) {
+  .site-header {
+    height: auto;
+    justify-self: start;
+    left: 0;
+    order: 2;
+    top: 0;
+  }
+
+  .site-name {
+    align-items: flex-start;
+    font-size: 1.95rem;
+    justify-content: flex-end;
+    margin: 0;
+    text-align: right;
+  }
+}

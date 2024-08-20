@@ -1,0 +1,57 @@
+@use "sass:map";
+
+.nav-link-item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  @include themed {
+    color: t("navLink");
+  }
+
+  & {
+    font-family: map.get($fonts, "sans", "font-family");
+    font-size: 1.25rem;
+    font-weight: map.get($fonts, "sans", "medium-heavy");
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    @include themed {
+      text-decoration-thickness: t("navLinkHoverLine");
+    }
+
+    & {
+      text-decoration: underline;
+      text-underline-offset: 0.375rem;
+      text-underline-position: below;
+    }
+  }
+}
+
+@media (width <= 48rem) {
+  .nav-link-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+
+    &:hover {
+      @include themed {
+        background-color: transparent;
+        transition: t("themeTransition");
+      }
+
+      & {
+        text-decoration: none;
+      }
+    }
+  }
+}

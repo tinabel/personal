@@ -1,0 +1,117 @@
+@use "sass:color";
+@use "sass:map";
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+$accent1: #463b76;
+$accent2: #405b92;
+$accent3: #213e54;
+$accent4: #236592;
+$accent5: #81a481;
+$danger: #e9250d;
+$dark: #110819;
+$info: #7c8bad;
+$light: #f1efea;
+$success: #3c7838;
+$warning: #ddc91c;
+$white: #fff;
+$fonts: (
+  "sans": (
+    "font-family": #{"Cabin",
+    Helvetica,
+    sans-serif},
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700,
+  ),
+  "serif": (
+    "font-family": #{"Zilla Slab",
+    Georgia,
+    serif},
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+  ),
+  "heading": (
+    "font-family": #{"Cabin",
+    Cambria,
+    Cochin,
+    Georgia,
+    Times,
+    "Times New Roman",
+    serif},
+    "normal": 400,
+    "bold": 700,
+  ),
+);
+$themes: (
+  "dark": (
+    "bg": $dark,
+    "bodyText": $light,
+    "bodyFontWeight": "medium-heavy",
+    "bodyHeadings": $accent2,
+    "bodyLink": color.adjust($accent4, $lightness: 30%),
+    "dividerBg": transparent url("../images/dividerbg3.jpg") no-repeat,
+    "footerBorder": $accent5,
+    "hr": $light,
+    "mastheadBg": $dark,
+    "navBackground": $dark,
+    "navBorder": $accent5,
+    "navButton": $light,
+    "navLink": $light,
+    "navLinkHover": color.adjust($info, $lightness: -15%, $alpha: -0.75),
+    "navLinkHoverLine": 0.125rem,
+    "siteTitle": $light,
+    "themeButtonBackground": $dark,
+    "themeIconBackground": $dark,
+    "themeTransition": all ease-in-out 100ms,
+  ),
+  "light": (
+    "bg": $white,
+    "bodyFontWeight": "medium",
+    "bodyHeadings": $accent1,
+    "bodyLink": $accent4,
+    "bodyText": $dark,
+    "dividerBg": transparent url("../images/dividerbg4.jpg") no-repeat,
+    "footerBorder": $accent2,
+    "hr": $accent3,
+    "mastheadBg": $white,
+    "navBackground": $white,
+    "navBorder": $accent2,
+    "navButton": $accent3,
+    "navLink": $dark,
+    "navLinkHover": color.adjust($dark, $alpha: -0.9, $saturation: 20%),
+    "navLinkHoverLine": 0.0625rem,
+    "siteTitle": $dark,
+    "themeButtonBackground": transparent,
+    "themeIconBackground": $dark,
+    "themeTransition": all ease-in-out 100ms,
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+
+      @each $key, $submap in $map {
+        $value: map.get(map.get($themes, $theme), "#{$key}");
+        $theme-map: map.merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map.get($theme-map, $key);
+}

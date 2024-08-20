@@ -1,0 +1,125 @@
+@use "sass:map";
+
+:root {
+  @include themed {
+    background-color: t("bg");
+  }
+
+  & {
+    color-scheme: light dark;
+    font-size: 16px;
+  }
+}
+
+body {
+  @include themed {
+    -webkit-font-smoothing: antialiased;
+    background-color: t("bg");
+    color: t("bodyText");
+    font-family: map.get($fonts, "serif", "font-family");
+    font-size: 1rem;
+    font-weight: map.get($fonts, "serif", t("bodyFontWeight"));
+    height: 100vh;
+    line-height: 1.25;
+    margin: 0;
+    transition: t("themeTransition");
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: map.get($fonts, "heading", "normal");
+
+  &.heading {
+    font-family: map.get($fonts, "sans", "font-family");
+    font-weight: map.get($fonts, "sans", "medium");
+    letter-spacing: 0.025em;
+    line-height: 1.2;
+    margin: 0 auto 0.5rem auto;
+    text-transform: uppercase;
+    word-spacing: 0.25em;
+  }
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.heading {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+a {
+  @include themed {
+    color: t("bodyLink");
+  }
+
+  & {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1875rem;
+    text-underline-position: below;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); /* browsers in the future */
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (width <= 48rem) {
+  h1 {
+  }
+  h2 {
+  }
+  h3 {
+  }
+  h4 {
+  }
+  h5 {
+  }
+  h6 {
+  }
+}

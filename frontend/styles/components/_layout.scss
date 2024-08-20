@@ -1,0 +1,149 @@
+@use "sass:map";
+
+.container * {
+  @include themed {
+    transition: t("themeTransition");
+  }
+}
+
+.container {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    ". . . . . theme"
+    "masthead masthead masthead masthead masthead masthead"
+    "divider divider divider divider divider divider"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 8vh 6vh 2vh auto 5vh;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 90%;
+}
+
+.masthead {
+  @include themed {
+    background-color: t("mastheadBg");
+    transition: t("themeTransition");
+  }
+
+  & {
+    align-content: center;
+    box-sizing: border-box;
+    display: grid;
+    gap: 0.25rem 1rem;
+    grid-area: masthead;
+    grid-template-areas: "head nav";
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0 0.5rem;
+    width: 90%;
+    z-index: 15;
+  }
+}
+
+.theme-toggle {
+  grid-area: theme;
+  height: 1.5rem;
+  justify-self: center;
+  position: relative;
+}
+
+.divider {
+  @include themed {
+    background: t("dividerBg");
+    background-position: 0 0;
+    background-size: 100%;
+    mask-image: linear-gradient(to right, transparent, black, 85%, transparent);
+  }
+
+  & {
+    border: none;
+    grid-area: divider;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.main-content {
+  box-sizing: border-box;
+  grid-area: main;
+  line-height: 1.2;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 0.5rem;
+  position: relative;
+  width: 90%;
+  z-index: 3;
+}
+
+.heading {
+  font-weight: 300;
+}
+
+.footer {
+  @include themed {
+    border-color: t("footerBorder");
+  }
+
+  & {
+    border-top: 1px solid;
+    grid-area: footer;
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0.5rem;
+    position: relative;
+    width: 90%;
+  }
+}
+
+@media (width <= 48rem) {
+  .container {
+    gap: 0.5rem 1rem;
+    grid-template-areas: ". . theme" "masthead masthead masthead" "divider  divider  divider" "main     main     main" "footer   footer   footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 9vh 14vh 3vh auto 10vh;
+    margin: 0 auto;
+    max-width: 95vw;
+    width: 100%;
+
+    .theme-toggle {
+      grid-area: theme;
+      height: 1.5rem;
+      justify-self: flex-end;
+      margin-top: 0.5rem;
+      position: relative;
+      right: 0.5rem;
+    }
+  }
+
+  .masthead {
+    align-items: center;
+    gap: 1rem;
+    grid-template-areas: "nav head theme";
+    grid-template-columns: 1.5rem 4fr 1fr;
+    grid-template-rows: auto;
+    height: fit-content;
+    margin: 0 auto;
+    max-width: 95vw;
+    padding-top: 0.5rem;
+    width: 100%;
+  }
+
+  .main-content {
+    margin: 0 auto;
+    max-width: 85vw;
+    top: 0rem;
+    width: 100%;
+  }
+}
