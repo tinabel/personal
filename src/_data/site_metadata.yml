@@ -1,0 +1,11 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: Tina Bell Vance
+tagline: A full-stack software engineer from the United States.
+email: tina@bellvance.com
+description: >-
+  Hi, I'm Tina Bell Vance. I'm a full-stack software engineer who specializes in building web applications. I'm passionate about creating software that is accessible, functional, and beautiful. I'm currently based in the United States.

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="<%= site.locale %>" class="theme--dark">
+  <head>
+    <%= render "head", metadata: site.metadata, title: data.title %>
+  </head>
+  <body class="hidden <%= data.layout %> <%= data.page_class %>">
+    <div class="container">
+      <%= render "theme_toggle" %>
+      <%= render "masthead", metadata: site.metadata %>
+      <hr class="divider" />
+      <main class="main-content">
+        <%= content %>
+      </main>
+      <%= render "footer", metadata: site.metadata %>
+    </div>
+  </body>
+</html>
