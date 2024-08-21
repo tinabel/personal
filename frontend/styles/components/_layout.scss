@@ -73,23 +73,9 @@
     position: relative;
     width: 100%;
   }
-}
 
-.bottom-divider {
-  @include themed {
-    background: t("dividerBg");
-    background-position: 0 0;
-    background-size: 100%;
-    mask-image: linear-gradient(to right, transparent, black, 85%, transparent);
-  }
-
-  & {
-    border: none;
+  &.bottom {
     grid-area: bottom-divider;
-    height: 100%;
-    margin: 0;
-    position: relative;
-    width: 100%;
   }
 }
 
