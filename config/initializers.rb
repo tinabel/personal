@@ -11,6 +11,7 @@ Bridgetown.configure do |_config|
   #
 
   init :"bridgetown-view-component"
+  init :"bridgetown-svg-inliner"
 
   # You can configure the inflector used by Zeitwerk. In v2.0,
   # ActiveSupport::Inflector will become the default.
