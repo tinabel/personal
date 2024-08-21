@@ -5,7 +5,6 @@ summary: Chili is something near and dear to my heart. I'll always remember my m
 date: 2020-08-29
 slug: chorizo-beef-chili
 tags:
-  - post
   - food
   - recipe
 ---

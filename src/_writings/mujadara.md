@@ -4,7 +4,6 @@ title: Improvised Mujadara
 date: 2019-05-15
 slug: improvised-mujadara
 categories:
-  - post
   - food
   - recipe
 ---

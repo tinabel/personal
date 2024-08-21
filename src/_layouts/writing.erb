@@ -3,6 +3,9 @@ layout: default
 ---
 
 <h1><%= data.title %></h1>
-<p class="date"><%= data.date %></p>
+
+<div class="published-date" aria-label="Published on <%= data.date.strftime("%B %d, %Y") %>" title="Pulish Date">
+  <%= data.date.strftime("%B %d, %Y") %>
+</div>
 
 <%= yield %>

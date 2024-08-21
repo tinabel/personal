@@ -34,13 +34,21 @@ body {
   font-size: 1.2rem;
 }
 
+blockquote {
+  font-size: 1.2rem;
+  font-weight: map.get($fonts, "serif", "semibold");
+  margin: 1.25rem 5%;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: map.get($fonts, "sans", "font-family");
   font-weight: map.get($fonts, "heading", "normal");
+  margin: 0.5rem auto 0.75rem auto;
 
   &.heading {
     font-family: map.get($fonts, "sans", "font-family");
@@ -99,7 +107,18 @@ a {
 
 p {
   font-size: 1em;
-  line-height: 1.2;
+  line-height: 1.25;
+}
+
+.subhead,
+.published-date {
+  & {
+    font-family: map.get($fonts, "sans", "font-family");
+    font-size: 1rem;
+    font-weight: map-get($fonts, "sans", "semibold");
+    margin: 0 auto 0.5rem auto;
+    opacity: 0.75;
+  }
 }
 
 .visually-hidden {
