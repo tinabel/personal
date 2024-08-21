@@ -1,0 +1,85 @@
+@use "sass:map";
+
+.footer {
+  @include themed {
+    transition: t("themeTransition");
+  }
+
+  & {
+    font-family: map.get($fonts, "sans", "font-family");
+    font-size: 1rem;
+    font-weight: map.get($fonts, "sans", "normal");
+    margin: 0;
+  }
+
+  abbr {
+    border-bottom: none;
+    text-decoration: none;
+  }
+}
+
+.footer-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-link {
+  @include themed {
+    color: t("footerLink");
+  }
+
+  & {
+    align-items: center;
+    display: flex;
+    font-weight: map.get($fonts, "sans", "bold");
+    gap: 0.5rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    @include themed {
+      color: t("footerLinkHover");
+    }
+
+    & {
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-social-link-text {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social-link:hover .footer-social-link-text {
+  opacity: 1;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+@media (width <= 48rem) {
+  .footer-socials {
+    gap: 1.5rem;
+  }
+  .footer-social-link-text {
+    display: none;
+  }
+}

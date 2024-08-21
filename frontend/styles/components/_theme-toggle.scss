@@ -6,8 +6,6 @@
 }
 
 .loaded .theme-toggle {
-  opacity: 1;
-  transition: opacity 0.3s ease;
   align-items: center;
   align-self: center;
   background-color: #fff;
@@ -23,9 +21,11 @@
   height: 2rem;
   justify-content: flex-start;
   margin-top: 0.75rem;
+  opacity: 1;
   overflow: hidden;
   padding: 0.1rem;
   text-align: left;
+  transition: opacity 0.3s ease;
   width: 5rem;
 
   .theme-toggle__text {
@@ -232,8 +232,11 @@
     height: 1.5rem;
     margin-top: 0;
     padding: 0.15rem;
-    right: 0;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.85rem;
     width: 2.75rem;
+    z-index: 15;
 
     .theme-toggle__text {
       height: 0;

@@ -12,13 +12,13 @@
   display: grid;
   gap: 1rem;
   grid-template-areas:
-    ". . . . . theme"
     "masthead masthead masthead masthead masthead masthead"
     "divider divider divider divider divider divider"
     "main main main main main main"
+    "bottom-divider bottom-divider bottom-divider bottom-divider bottom-divider bottom-divider"
     "footer footer footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 8vh 6vh 2vh auto 5vh;
+  grid-template-rows: 6rem 1rem auto 1rem 2rem;
   height: 100vh;
   margin: 0 auto;
   max-width: 75rem;
@@ -37,9 +37,9 @@
     display: grid;
     gap: 0.25rem 1rem;
     grid-area: masthead;
-    grid-template-areas: "head nav";
+    grid-template-areas: ". . theme" "head . nav";
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto;
+    grid-template-rows: 3rem auto;
     height: auto;
     left: 0;
     margin: 0 auto;
@@ -53,7 +53,7 @@
 .theme-toggle {
   grid-area: theme;
   height: 1.5rem;
-  justify-self: center;
+  justify-self: end;
   position: relative;
 }
 
@@ -68,6 +68,24 @@
   & {
     border: none;
     grid-area: divider;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.bottom-divider {
+  @include themed {
+    background: t("dividerBg");
+    background-position: 0 0;
+    background-size: 100%;
+    mask-image: linear-gradient(to right, transparent, black, 85%, transparent);
+  }
+
+  & {
+    border: none;
+    grid-area: bottom-divider;
     height: 100%;
     margin: 0;
     position: relative;
@@ -92,30 +110,27 @@
 }
 
 .footer {
-  @include themed {
-    border-color: t("footerBorder");
-  }
-
-  & {
-    border-top: 1px solid;
-    grid-area: footer;
-    margin: 0 auto;
-    max-width: 75rem;
-    padding: 0.5rem;
-    position: relative;
-    width: 90%;
-  }
+  grid-area: footer;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0.5rem;
+  position: relative;
+  width: 90%;
 }
 
 @media (width <= 48rem) {
   .container {
     gap: 0.5rem 1rem;
-    grid-template-areas: ". . theme" "masthead masthead masthead" "divider  divider  divider" "main     main     main" "footer   footer   footer";
+    grid-template-areas:
+      "masthead masthead masthead"
+      "divider  divider  divider"
+      "main     main     main"
+      "bottom-divider  bottom-divider  bottom-divider"
+      "footer   footer   footer";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 9vh 14vh 3vh auto 10vh;
+    grid-template-rows: 6rem 1rem auto 1rem 2rem;
     margin: 0 auto;
-    max-width: 95vw;
-    width: 100%;
+    width: 95vw;
 
     .theme-toggle {
       grid-area: theme;
@@ -130,20 +145,18 @@
   .masthead {
     align-items: center;
     gap: 1rem;
-    grid-template-areas: "nav head theme";
-    grid-template-columns: 1.5rem 4fr 1fr;
-    grid-template-rows: auto;
+    grid-template-areas: "nav . theme" "head head head";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2rem auto;
     height: fit-content;
-    margin: 0 auto;
-    max-width: 95vw;
+    margin: 0 0 0 5vw;
     padding-top: 0.5rem;
-    width: 100%;
+    width: 90vw;
   }
 
   .main-content {
-    margin: 0 auto;
-    max-width: 85vw;
+    margin: 0 0 0 5vw;
     top: 0rem;
-    width: 100%;
+    width: 90vw;
   }
 }
