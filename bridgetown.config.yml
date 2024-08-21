@@ -21,6 +21,10 @@ url: "https://tinabellvance.com" # the base hostname & protocol for your site, e
 
 permalink: pretty
 template_engine: erb
+collections:
+  writings:
+    output: true
+    permalink: /writings/:path/
 
 # Other options you might want to investigate:
 #
