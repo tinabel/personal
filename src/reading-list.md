@@ -11,7 +11,7 @@ title: Reading List
   <li><a href="https://wesbos.com/" target="_blank" rel="noopener noreferrer">Wes Bos</a></li>
   <li><a href="tps://syntax.fm/" target="_blank" rel="noopener noreferrer">Syntax</a></li>
   <li><a href="https://css-tricks.com" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
-  <li><a href="https://adactio.com/" target="_blank" rel="noopener noreferrer">Jerem Keith</a></li>
+  <li><a href="https://adactio.com/" target="_blank" rel="noopener noreferrer">Jeremy Keith</a></li>
   <li><a href="https://css-tip.com" target="_blank" rel="noopener noreferrer">CSS Tip</a></li>
   <li><a href="https://www.aliciasykes.com/" target="_blank" rel="noopener noreferrer">Alicia Sykes</a></li>
   <li><a href="tp://rubyland.news/" target="_blank" rel="noopener noreferrer">Rubyland</a></li>
