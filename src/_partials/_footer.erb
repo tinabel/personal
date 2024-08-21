@@ -1,3 +1,32 @@
 <footer class="footer">
-  Copyright <%= Time.now.year %>, <a href="mailto:<%= metadata.email%>">Tina Bell Vance</a>
+  <div class="footer-content">
+    <p>
+      <abbr title="copyright">&copy;</abbr>
+      <%= Time.now.year %> by <a class="footer-author footer-email" href="mailto:<%= metadata.email %>">
+          Tina Bell Vance
+        </a> 
+    </p>
+    <ul class="footer-socials">
+      <li class="footer-social">
+        <a href="mailto:<%= metadata.email %>" class="footer-social-link">
+          <%= svg "/images/icons/email.svg", class: "icon" %>
+            <span class="footer-social-link-text">Email</span>
+        </a>
+      </li>
+      <li class="footer-social">
+        <a href="https://github.com/tinabel" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+          <%= svg "/images/icons/github.svg", class: "icon" %>
+          <span class="footer-social-link-text">GitHub</span>
+        </a>
+      </li>
+      <li class="footer-social">
+        <a href="https://www.linkedin.com/in/tinabellvance" class="footer-social-link" target="_blank"
+          rel="noopener noreferrer">
+          <%= svg "/images/icons/linkedin.svg", class: "icon" %>
+          <span class="footer-social-link-text">LinkedIn</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
 </footer>
