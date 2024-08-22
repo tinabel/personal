@@ -26,10 +26,10 @@ collections:
     output: true
     permalink: /writings/:path/
 feed:
-  path: atom.xml
   content_type: application/feed+json
   collections:
-    - writings
+    writings:
+      path: "/atom.xml"
 
 # Other options you might want to investigate:
 #
