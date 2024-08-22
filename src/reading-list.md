@@ -22,5 +22,6 @@ title: Reading List
   <li><a href="https://jvns.ca/" target="_blank" rel="noopener noreferrer">Julia Evans</a></li>
   <li><a href="https://theuselessweb.com/" target="_blank" rel="noopener noreferrer">The Useless Web</a></li>
   <li><a href="https://www.sarasoueidan.com/" target="_blank" rel="noopener noreferrer">Sara Soueidan</a></li>
+  <li><a href="https://ctmiller.net/" target="_blank" rel="noopener noreferrer">Chris Miller</a></li>
   <li><a href="https://devblogs.microsoft.com/typescript/" target="_blank" rel="noopener noreferrer">Typescript Blog</a></li>
 </ul>
