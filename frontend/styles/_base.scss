@@ -59,6 +59,19 @@ h6 {
     text-transform: uppercase;
     word-spacing: 0.25em;
   }
+
+  &.site-name a,
+  &.site-name a:hover,
+  &.site-name a:active,
+  &.site-name a:visited {
+    @include themed {
+      color: t("siteTitle");
+    }
+
+    & {
+      text-decoration: none;
+    }
+  }
 }
 
 h1 {
