@@ -24,4 +24,7 @@ title: Reading List
   <li><a href="https://www.sarasoueidan.com/" target="_blank" rel="noopener noreferrer">Sara Soueidan</a></li>
   <li><a href="https://ctmiller.net/" target="_blank" rel="noopener noreferrer">Chris Miller</a></li>
   <li><a href="https://devblogs.microsoft.com/typescript/" target="_blank" rel="noopener noreferrer">Typescript Blog</a></li>
+  <li><a href="https://davidjohnmead.com/" target="_blank" rel="noopener noreferrer">Dave Mead</a></li>
+  <li><a href="https://www.404media.co/" target="_blank" rel="noopener noreferrer">404 Media</a></li>
+
 </ul>
