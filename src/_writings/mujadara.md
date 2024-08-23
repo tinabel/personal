@@ -1,6 +1,7 @@
 ---
 layout: writing
 title: Improvised Mujadara
+summary: "Mujadara is a Lebanese recipe, often made for Friday Lenten dinners. The recipe I’m writing won’t be used for any Lenten Friday night though, since it calls for a cup and a half of chicken broth. Sure, you can use veggie broth for a Friday night or a vegetarian meal, but all I had in my pantry was chicken, so there you are. This has a few extra ingredients from your basic Mujadara."
 date: 2019-05-15
 slug: improvised-mujadara
 categories:

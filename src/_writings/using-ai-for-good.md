@@ -1,6 +1,7 @@
 ---
 layout: writing
 title: "Using AI for Good"
+summary: "It seems like AI is everywhere. Companies are slathering LLMs on like Frank's Red Hot, hoping that generative AI is the special sauce they need to grab more revenue. As a visual artist, I haven't been keen on AI, as apps like MidJourney and others have plagiarized from a lot of hard-working artists. Then there's the resource-intensive processing requirements that seem to be increasing every day. As a software engineer (developer/programmer/codemonkey), I have to admit that I'm curious about the _good_ ways we can use generative AI that don't harm creators and how we can limit unnecessary AI use to curb resource consumption."
 date: 2024-08-21 14:12:52 -0400
 categories: programming, software development
 ---
@@ -30,7 +31,6 @@ The biggest thing to understand is that if you use AI generated code and claim i
 One of my favorite new fun things is to ask Copilot or Codeium to "roast my code". I want to understand where I can improve and this is a fun way to figure out how to improve my code in a very low-stakes way. I've had some face-palm moments where one of my projects has had redundancies that I overlooked and I've also had responses that I've taken with more than a few grains of salt, but it's interesting to see what the tools come up with.
 
 I've also used AI tools to see what design patterns I use the most frequently in my work. I find that this actually helps me understand my own development process a little better over time.
-
 
 ### Use AI as a starting point, not a finish line
 

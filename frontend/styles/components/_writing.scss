@@ -1,0 +1,26 @@
+.writings,
+.essay {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.essay {
+}
+
+.article-link {
+  @include themed {
+    border-bottom: 1px solid t("postBorder") !important;
+    color: t("bodyText");
+  }
+
+  & {
+    display: block;
+    opacity: 85%;
+
+    &:hover {
+      opacity: 100%;
+      text-decoration: none;
+    }
+  }
+}

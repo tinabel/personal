@@ -1,6 +1,7 @@
 ---
 layout: writing
 title: "Kind code reviews"
+summary: "Code reviews can be tough for everyone involved. If it's your code, you've put your work out there to be critiqued. If you're a reviewer, you have to balance critique and criticism. What's the difference? The approach: critique offers a balanced and constructive approach to review, while criticism is subjective and often focuses on flaws. Both can get the job done, but one of these is more effective long term."
 date: 2024-08-18 19:45:52 -0400
 categories: programming, software development
 ---
