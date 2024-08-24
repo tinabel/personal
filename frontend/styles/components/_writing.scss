@@ -24,3 +24,11 @@
     }
   }
 }
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 3rem auto 0 auto;
+  padding: 0;
+}

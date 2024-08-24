@@ -15,9 +15,25 @@ paginate:
             <div class="published-date" aria-label="Published on <%= writing.data.date.strftime("%B %d, %Y") %>" title="Publish Date">
               <%= writing.data.date.strftime("%B %d, %Y") %>
             </div>
-          <p class="excerpt"><%= writing.data.summary%></p>
+          <%= render Shared::Excerpt.new(text: writing.data.summary) %>
         </a>
       </article>
     </li>
   <% end %>
 </ul>
+
+<% if paginator.total_pages > 1 %>
+
+  <ul class="pagination">
+    <% if paginator.previous_page %>
+    <li>
+      <a href="<%= paginator.previous_page_path %>">Previous Page</a>
+    </li>
+    <% end %>
+    <% if paginator.next_page %>
+    <li>
+      <a href="<%= paginator.next_page_path %>">Next Page</a>
+    </li>
+    <% end %>
+  </ul>
+<% end %>
