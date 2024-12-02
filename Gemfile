@@ -37,7 +37,6 @@ gem 'puma', '< 7'
 
 gem 'bridgetown-feed', '~> 3.1'
 gem 'bridgetown-svg-inliner', '~> 2.0'
-gem 'bridgetown-view-component', '~> 2.0'
 gem 'pry'
 gem 'rubocop'
 

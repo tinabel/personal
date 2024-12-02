@@ -2,18 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "$styles/*": [
-        "./frontend/styles/*"
-      ],
-      "$javascript/*": [
-        "./frontend/javascript/*"
-      ],
-      "$partials/*": [
-        "./frontend/javascript/partials/*"
-      ],
-      "$components/*": [
-        "./src/_components/*"
-      ],
+      "$styles/*": ["./frontend/styles/*"],
+      "$javascript/*": ["./frontend/javascript/*"],
+      "$partials/*": ["./frontend/javascript/partials/*"]
     }
   }
 }

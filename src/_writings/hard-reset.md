@@ -1,15 +1,12 @@
 ---
 layout: writing
-title: "Reset"
-summary: Last Friday was a normal day, until it wasn't. I had breakfast with my husband, went to work, had a haircut, went out to dinner with my family. Normal. And then, the bottom dropped out. A week ago, at this exact time, I was in the emergency room being treated for anaphylaxis due to a severe food allergy.
+title: "Hard Reset"
+summary: Last Friday was a normal day, until it wasn't. I had breakfast with my husband, went to work, had a haircut, went out to dinner with my family. Normal. And then, the bottom dropped out. A week ago, at this exact time, I was in the emergency room being treated for anaphylaxis from a severe food allergy.
 date: 2024-11-29 11:30:00 -0400
 categories: life, perspective, long-form
 ---
 
-<figure class="float-right">
-<img src="/images/TamarindStraw.jpg" alt="A picture of my new nemesis, the tamarind candy straw" style="width: 100%" />
-<figcaption>My new nemesis: the tamarind candy straw</figcaption></figure>
-Last Friday was a normal day, until it wasn't. I had breakfast with my husband, went to work, had a haircut, went out to dinner with my family. Normal. And then, the bottom dropped out. A week ago, at this exact time, I was in the emergency room being treated for anaphylaxis from a severe food allergy.
+<figure class="float-right"><img src="/images/TamarindStraw.jpg" alt="A picture of my new nemesis, the tamarind candy straw" style="width: 100%" /><figcaption>My new nemesis: the tamarind candy straw</figcaption></figure>Last Friday was a normal day, until it wasn't. I had breakfast with my husband, went to work, had a haircut, went out to dinner with my family. Normal. And then, the bottom dropped out. A week ago, at this exact time, I was in the emergency room being treated for anaphylaxis from a severe food allergy.
 
 As far as I know, it was a candy-coated straw that took me down. I had ordered a michelada with my dinner and the server brought a special straw to drink it through. By the end of dinner, my lips were tingly and started to feel like they were swelling. My eldest drove me home. I checked my reflection en route: I had lips worthy of a botched filler procedure.
 
