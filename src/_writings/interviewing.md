@@ -3,7 +3,7 @@ layout: writing
 title: Gotchas, Culture, and Engineering Interviews
 summary: I've been in some spectacularly terrible interviews. Absolutely horrible car-wrecks of interviews. As someone with extreme people-pleasing tendencies, this can be tough. I have to remember that the things that make the interview so awful are the things that I don't want to deal with in any new position.
 date: 2024-08-23
-tags:
+categories:
   - engineering
   - soft-skills
   - interviewing

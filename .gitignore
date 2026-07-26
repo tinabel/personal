@@ -4,6 +4,7 @@ output
 .bridgetown-metadata
 .bridgetown-webpack
 .routes.json
+.bridgetown-cache/**/*
 
 # Dependency folders
 node_modules
@@ -36,3 +37,6 @@ yarn-debug.log*
 .yarn-integrity
 .bridgetown-cache/frontend-bundling/manifest.json
 node_modules/.yarn-integrity
+
+# Local Netlify folder
+.netlify

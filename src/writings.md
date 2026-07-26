@@ -15,7 +15,7 @@ paginate:
             <div class="published-date" aria-label="Published on <%= writing.data.date.strftime("%B %d, %Y") %>" title="Publish Date">
               <%= writing.data.date.strftime("%B %d, %Y") %>
             </div>
-          <%= render Shared::Excerpt.new(text: writing.data.summary) %>
+            <div class="excerpt"><%= format_excerpt text: writing.data.summary %></div>
         </a>
       </article>
     </li>

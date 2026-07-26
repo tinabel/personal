@@ -10,7 +10,6 @@ Bridgetown.configure do |_config|
   # config.autoload_paths << "models"
   #
 
-  init :"bridgetown-view-component"
   init :"bridgetown-svg-inliner"
   init :"bridgetown-feed"
 
